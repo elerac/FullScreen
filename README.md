@@ -5,6 +5,10 @@ Display image in fullscreen for the projector-camera system.
 
 Python has some GUI tools, but only a few of them are suitable for fullscreen display. In this repository, *Tkinter* or *OpenCV* or *PyQt5* can be used as the backend. The best backend depends on the environment (i.e., OS, monitor, version of the software), so choose the best one for you.
 
+> [!NOTE]  
+> Recently, I released a new fullscreen program using OpenGL/GLFW in Python. I confirmed it could run at 60 fps, which achieves much faster pro-cam synchronization. You can check it out at https://github.com/elerac/pyglimshow.
+
+
 ## Requirement
 ### Tkinter backend (default)
 - Pillow (PIL)
@@ -81,7 +85,4 @@ To summarize the above table, the following cases do not seem to work well ❌,
 
 In some cases, it works but may not be perfect 🤔, 
 - On Ubuntu, Tkinter could not display the first image, but the second and later images work well.
-
-## ToDo
-- Stable support for multiple monitors.
-- OpenGL (or Metal?) based fullscreen imshow (like [kamino410/gl_imshow](https://github.com/kamino410/gl_imshow)) on **macOS** for faster rendering.
+- 
